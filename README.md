@@ -1,12 +1,60 @@
-# React + Vite
+# Запись к врачу (Clinic App)
+Веб-приложение для записи к врачу. Пользователь может оставить заявку на приём, а врач — просматривать заявки через защищённую зону.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Стек технологий
 
-Currently, two official plugins are available:
+### Фронтенд:
+- React
+- Redux
+- JavaScript
+- Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Бэкенд:
+- Node.js
+- Express
+- MongoDB
+- Docker (для MongoDB)
 
-## Expanding the ESLint configuration
+##  Функциональность
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Для пациента:
+- Форма записи (ФИО, телефон, описание проблемы)
+- Маска для ввода номера телефона
+- Отправка заявки в базу данных
+
+### Для врача:
+- Авторизация по логину и паролю
+- Таблица со всеми заявками (дата, ФИО, телефон, жалоба)
+
+##  Превью
+###  Форма записи:
+![Форма записи](/assets/form-preview.jpg)
+
+###  Авторизация врача:
+![Авторизация](/assets/login-preview.jpg)
+
+###  Таблица заявок:
+![Заявки](/assets/entries-preview.jpg)
+
+##  Установка и запуск
+
+### 1. Клонировать проект:
+- git clone https://github.com/Menethilzxc/clinic.git
+- cd clinic
+
+### 2. Установить зависимости:
+#### Фронтенд:
+- npm install
+- npm run dev
+
+#### Бэкенд
+cd backend
+npm install
+node index.js
+
+#### 3. Запуск MongoDB через Docker:
+docker run -d -p 27020:27017 --name clinic-db mongo
+
+##  Данные для входа (тестовые):
+Email: user@mail.com
+Пароль: pass
