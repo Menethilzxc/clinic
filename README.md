@@ -56,5 +56,5 @@
 - docker run -d -p 27020:27017 --name clinic-db mongo
 
 ##  Данные для входа (тестовые):
-Email: user@mail.com
-Пароль: pass
+- Email: user@mail.com
+- Пароль: pass
