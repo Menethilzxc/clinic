@@ -52,7 +52,7 @@
 - npm install
 - node index.js
 
-#### 3. Запуск MongoDB через Docker:
+### 3. Запуск MongoDB через Docker:
 - docker run -d -p 27020:27017 --name clinic-db mongo
 
 ##  Данные для входа (тестовые):
