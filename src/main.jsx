@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router';
 import { Provider } from 'react-redux';
-import { store } from '../../Quiz/src/store';
+import { store } from '../../clinic/src/store';
 import Clinic from './Clinic';
 
 import './index.css';
