@@ -47,7 +47,7 @@
 - npm install
 - npm run dev
 
-#### Бэкенд
+#### Бэкенд:
 - cd backend
 - npm install
 - node index.js
